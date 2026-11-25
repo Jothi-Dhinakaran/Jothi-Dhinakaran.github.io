@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jothi Dhinakaran J M — Computer Science Student & Builder</title>
+<meta name="description" content="Jothi Dhinakaran J M — 3rd-year CSE student at Government College of Technology, Coimbatore. Building RAG pipelines, full-stack products and algorithm visualizers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand">Jothi<span>.</span></a>
+  <nav id="links">
+    <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-r">
+    <span class="clock mono" id="clock">Coimbatore</span>
+    <button id="theme" class="icon" aria-label="Toggle dark / light theme"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1v3M12 20v3M1 12h3M20 12h3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></g></svg></button>
+    <a class="pill" href="Jothi_Dhinakaran_Resume.docx" download>Resume ↓</a>
+    <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow mono"><i></i> Computer Science Student · Coimbatore, India</p>
+    <h1>
+      <span class="mask"><span class="ln">Jothi</span></span>
+      <span class="mask"><span class="ln">Dhinakaran <em>J&nbsp;M</em></span></span>
+    </h1>
+    <div class="hero-row">
+      <p class="sub"><span class="mask"><span class="ln">I build <em>RAG pipelines</em>, full-stack products</span></span><span class="mask"><span class="ln">and tools that make algorithms visible.</span></span></p>
+      <a href="#work" class="scroll" aria-label="Scroll to work">
+        <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#circ" class="mono">SCROLL DOWN • SCROLL DOWN • SCROLL DOWN • </textPath></text></svg>
+        <b>↓</b>
+      </a>
+    </div>
+    <div class="facts">
+      <div><span class="mono">Studying</span><b>B.E. Computer Science &amp; Engineering</b></div>
+      <div><span class="mono">At</span><b>Government College of Technology</b></div>
+      <div><span class="mono">Year · CGPA</span><b>3rd year · 8.42</b></div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>Java</span><span>C</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>FastAPI</span><span>Next.js</span><span>RAG</span><span>LLMs</span>
+    <span>Java</span><span>C</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>PostgreSQL</span><span>FastAPI</span><span>Next.js</span><span>RAG</span><span>LLMs</span>
+  </div></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="label mono">( 01 ) About</p>
+    <p class="statement" id="statement">I'm a motivated computer science student and hands-on builder — from retrieval-augmented generation pipelines to full-stack products and hackathons. I like turning abstract ideas into tools people can actually use, and explaining technical ideas clearly so others can build on them.</p>
+    <div class="coursework">
+      <p class="label mono">Coursework</p>
+      <ul><li>Data Structures &amp; Algorithms</li><li>Design &amp; Analysis of Algorithms</li><li>Database Management Systems</li><li>Theory of Computation</li><li>System Programming &amp; Operating Systems</li></ul>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <p class="label mono">( 02 ) Selected work</p>
+    <h2><span class="mask"><span class="ln">Things I've <em>built</em>.</span></span></h2>
+    <div class="projects" id="projects">
+
+      <article class="proj open">
+        <button class="p-head" aria-expanded="true"><span class="idx mono">01</span><h3>Logistics Warehouse SKU Dispatch Planning</h3><span class="p-tags mono">FastAPI · Next.js · PostgreSQL · LightGBM</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="p-body"><div class="inner">
+          <div class="p-copy">
+            <p>A web app that forecasts demand for each product and plans which orders ship first, so limited stock reaches the right customers.</p>
+            <ul>
+              <li>LightGBM demand forecasting — daily error of <b>19.6%</b> against a 20% target.</li>
+              <li>The planner approves the plan and sends it to the warehouse system; the same stock is never given to two orders.</li>
+              <li>Built as an intern in a four-member team at Yzone.</li>
+            </ul>
+          </div>
+          <div class="p-art a1"><b>19.6<small>%</small></b><span class="mono">daily forecast error<br>target 20%</span></div>
+        </div></div>
+      </article>
+
+      <article class="proj">
+        <button class="p-head" aria-expanded="false"><span class="idx mono">02</span><h3>Retrieval-Augmented Generation Pipeline</h3><span class="p-tags mono">LLMs · Vector databases · Claude Code</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="p-body"><div class="inner">
+          <div class="p-copy">
+            <p>A RAG pipeline that connects large language models to vector databases so answers are grounded in real documents.</p>
+            <ul><li>Designed and implemented the full pipeline integrating LLMs with vector databases.</li><li>Optimized retrieval and semantic search for better accuracy.</li><li>Applied coursework and hands-on Claude Code training to extend LLM capabilities.</li></ul>
+          </div>
+          <div class="p-art a2"><b>RAG</b><span class="mono">retrieve → augment → generate</span></div>
+        </div></div>
+      </article>
+
+      <article class="proj">
+        <button class="p-head" aria-expanded="false"><span class="idx mono">03</span><h3>Page Insight — Browser Extension</h3><span class="p-tags mono">AI · Full stack · Privacy-first</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="p-body"><div class="inner">
+          <div class="p-copy">
+            <p>A browser extension that gives instant insight into any webpage: its type, sentiment and a one-line summary.</p>
+            <ul><li>Extracts visible page content, analyzes it and shows results in a popup UI with live demos.</li><li>Privacy by design: only visible content on public pages, no personal browsing data stored — documented in a Privacy README.</li></ul>
+          </div>
+          <div class="p-art a3"><b>1-line</b><span class="mono">type · sentiment · summary</span></div>
+        </div></div>
+      </article>
+
+      <article class="proj">
+        <button class="p-head" aria-expanded="false"><span class="idx mono">04</span><h3>CS Algorithm &amp; System Visualizer</h3><span class="p-tags mono">Vanilla JS · HTML5 · CSS3 · Gemini / Ollama</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="p-body"><div class="inner">
+          <div class="p-copy">
+            <p>An offline, step-by-step visualizer for data structures, operating systems and networks — no build step, just open the page.</p>
+            <ul><li>60+ topics with play / pause / step-back, custom inputs, live pseudocode and a state inspector.</li><li>AI tutor panel using Gemini or local Ollama, with an offline rule-based fallback and prediction quizzes.</li></ul>
+          </div>
+          <div class="p-art a4"><b>60<small>+</small></b><span class="mono">interactive topics<br>runs 100% offline</span></div>
+        </div></div>
+      </article>
+
+      <article class="proj">
+        <button class="p-head" aria-expanded="false"><span class="idx mono">05</span><h3>Pharmacy Management System</h3><span class="p-tags mono">HTML · CSS · JavaScript · PHP · MySQL</span><span class="plus" aria-hidden="true"></span></button>
+        <div class="p-body"><div class="inner">
+          <div class="p-copy">
+            <p>A web-based system to manage day-to-day pharmacy operations.</p>
+            <ul><li>Responsive frontend with backend logic written in PHP.</li><li>MySQL integration for efficient data handling in a localhost environment.</li></ul>
+          </div>
+          <div class="p-art a5"><b>PHP<small>+</small>SQL</b><span class="mono">mini project</span></div>
+        </div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section class="numbers">
+    <div><b data-count="8.42" data-dec="2">0</b><span class="mono">CGPA</span></div>
+    <div><b data-count="5">0</b><span class="mono">projects shipped</span></div>
+    <div><b data-count="4">0</b><span class="mono">person team at Yzone</span></div>
+    <div><b data-count="60" data-suffix="+">0</b><span class="mono">visualizer topics</span></div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="label mono">( 03 ) Skills</p>
+    <h2><span class="mask"><span class="ln">The <em>toolkit</em>.</span></span></h2>
+    <div class="skills">
+      <div><h3>Languages</h3><ul><li>Java</li><li>C</li></ul></div>
+      <div><h3>Web</h3><ul><li>HTML &amp; CSS</li><li>JavaScript</li><li>PHP</li><li>Next.js</li><li>FastAPI</li></ul></div>
+      <div><h3>Data</h3><ul><li>MySQL</li><li>PostgreSQL</li><li>Vector databases</li></ul></div>
+      <div><h3>AI</h3><ul><li>LLMs</li><li>RAG pipelines</li><li>Claude Code</li><li>LightGBM</li></ul></div>
+      <div><h3>Core</h3><ul><li>Problem solving</li><li>Logical thinking</li><li>Explaining technical ideas</li></ul></div>
+      <div><h3>Exploring</h3><ul><li>Full-stack development</li><li>GPU &amp; parallel computing</li></ul></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <p class="label mono">( 04 ) Experience</p>
+    <h2><span class="mask"><span class="ln">Where I've <em>learned</em>.</span></span></h2>
+    <div class="rows">
+      <div class="row"><span class="mono">Internship</span><div><h3>Intern — Yzone</h3><p>Logistics Warehouse SKU Dispatch Planning. Worked in a four-member team to build a dispatch planning system, helping decide which orders ship first, from which stock, and in which truck wave.</p></div></div>
+      <div class="row"><span class="mono">Hackathon</span><div><h3>Participant — Smart India Hackathon</h3><p>Attendance Management System. Contributed ideas for an automated attendance system for colleges and collaborated with the team to improve tracking efficiency at a national-level hackathon.</p></div></div>
+      <div class="row"><span class="mono">Workshop</span><div><h3>“Mastering NVIDIA GPUs”</h3><p>Learned the fundamentals of GPU architecture and parallel computing, with exposure to performance optimization using GPUs.</p></div></div>
+      <div class="row"><span class="mono">Education</span><div><h3>B.E. Computer Science &amp; Engineering</h3><p>Government College of Technology, Coimbatore — 3rd year, current. CGPA 8.42.</p></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="label mono">( 05 ) Contact</p>
+    <h2 class="big"><span class="mask"><span class="ln">Let's build</span></span><span class="mask"><span class="ln"><em>something</em> together.</span></span></h2>
+    <a class="mail" id="mail" href="mailto:jothidhina57@gmail.com">jothidhina57@gmail.com <span>↗</span></a>
+    <div class="links">
+      <a href="http://www.linkedin.com/in/jothi-dhinakaran-j-m-052bb4330" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="tel:+919791700588">+91 97917 00588</a>
+      <button id="copy" class="linkbtn">Copy email</button>
+      <a href="Jothi_Dhinakaran_Resume.docx" download>Resume ↓</a>
+    </div>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> Jothi Dhinakaran J M</span><a href="#top">Back to top ↑</a></footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
